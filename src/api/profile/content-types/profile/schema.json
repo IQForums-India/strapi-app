@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "profile ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15
+    },
+    "last_name": {
+      "type": "string",
+      "maxLength": 15,
+      "required": true
+    },
+    "Bio": {
+      "type": "text",
+      "required": true,
+      "maxLength": 100
+    },
+    "Education": {
+      "type": "string",
+      "required": true
+    },
+    "Position": {
+      "displayName": "Current position",
+      "type": "component",
+      "repeatable": false,
+      "component": "current-position.current-position"
+    },
+    "Location": {
+      "displayName": "Location",
+      "type": "component",
+      "repeatable": false,
+      "component": "location.location"
+    },
+    "admin_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "admin::user"
+    }
+  }
+}

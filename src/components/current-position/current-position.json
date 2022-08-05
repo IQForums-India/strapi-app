@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_current_position_current_positions",
+  "info": {
+    "displayName": "Current position"
+  },
+  "options": {},
+  "attributes": {
+    "Position": {
+      "type": "string",
+      "required": true
+    },
+    "Industry": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
